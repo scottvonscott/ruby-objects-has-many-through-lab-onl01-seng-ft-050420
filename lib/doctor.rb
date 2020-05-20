@@ -16,6 +16,7 @@ class Doctor
   def appointments
     Appointment.all.find do |appointment|
       appointment.doctor == self
+    end
   end
 
   def new_appointment(date, patient)
