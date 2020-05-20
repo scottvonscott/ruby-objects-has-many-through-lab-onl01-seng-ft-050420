@@ -4,7 +4,7 @@ class Appointment
 
   @@all = []
 
-  def initialize (name)
+  def initialize (name, patient, doctor)
     @name = name
     @@all << self
   end
@@ -13,13 +13,10 @@ class Appointment
     @@all
   end
 
-  def appointments
+  def doctor
   end
 
-  def new_appointment
-  end
-
-  def patients
+  def patient
   end
 
 end
